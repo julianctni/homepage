@@ -1,0 +1,65 @@
+{
+  "education": [
+    {
+      "period": "04/2016 – 09/2018",
+      "title": "M.Sc. Media Computer Science, final grade 1.1",
+      "location": "Technische Universität Dresden, Germany"
+    },
+    {
+      "period": "10/2012 – 04/2016",
+      "title": "B.Sc. Media Computer Science, final grade 1.8",
+      "location": "Technische Universität Dresden, Germany"
+    },
+    {
+      "period": "09/2001 – 07/2010",
+      "title": "Allgemeine Hochschulreife (Abitur), final grade 1.7",
+      "location": "Jack-Steinberger-Gymnasium, Bad Kissingen, Germany"
+    }
+  ],
+  "work_experience": [
+    {
+      "period": "10/2018 – today",
+      "title": "Research assistant",
+      "task": "Heavily involved in teaching at chair of software engineering",
+      "location": "Technische Universität Dresden, Germany"
+    },
+    {
+      "period": "10/2013 – 09/2017",
+      "title": "Student assistant",
+      "task": "Supervising the law faculty's computer pool",
+      "location": "Technische Universität Dresden, Germany"
+    }
+  ],
+  "projects": [
+    {
+      "title": "mensaDD",
+      "description": "content will be added soon.",
+      "url": ""
+    },
+    {
+      "title": "OUTPUT.DD app",
+      "description": "content will be added soon.",
+      "url": ""
+    },
+    {
+      "title": "Dresden Vegan app",
+      "description": "content will be added soon.",
+      "url": ""
+    },
+    {
+      "title": "fastVPN",
+      "description": "content will be added soon.",
+      "url": ""
+    },
+    {
+      "title": "Verborgene Relationen",
+      "description": "content will be added soon.",
+      "url": ""
+    },
+    {
+      "title": "Website 50th anniversary of computer science education",
+      "description": "content will be added soon.",
+      "url": "https://festtage.inf.tu-dresden.de"
+    }
+  ]
+}

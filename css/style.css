@@ -1,0 +1,213 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  outline: 0 !important;
+}
+
+.no-preload-transition * {
+  transition: none !important;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, aside #link-list i {
+  color: #444;
+}
+
+aside {
+  min-height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside > div {
+  padding: 2rem;
+}
+
+aside > div > p {
+  font-family: 'Raleway', sans-serif;
+}
+
+aside > div > h1 {
+  font-size: 2rem;
+}
+
+aside > div > img {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  animation: shake 500ms ease-in-out;
+  animation-delay: 500ms;
+}
+
+aside > div > img:hover {
+  animation: shake 500ms;
+  animation-iteration-count: infinite; 
+}
+
+aside #link-list i {
+  margin-right: 1.5rem;
+  padding: .5rem 0;
+  transition: ease-in-out 100ms;
+}
+
+@media (pointer: fine) {
+  aside #link-list i:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 100ms;
+  }
+}
+
+main {
+  min-height: 70vh;
+  width: 100%;
+}
+
+main > section {
+  padding: 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+main > section:nth-child(3n+1) {
+  background-color: #355070;
+}
+
+main > section:nth-of-type(3n+2) {
+  background-color: #6d597a;
+}
+
+main > section:nth-of-type(3n+3) {
+  background-color: #b56576;
+}
+
+main > section > h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+main > section > div {
+  padding-bottom: 3rem;
+}
+
+main > section > div > h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+}
+
+main > section > div > p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  font-weight: 300;
+}
+
+main > section > div > p:first-child {
+  font-family: 'Raleway', sans-serif;
+}
+
+main > section.has-timeline > div {
+  position: relative;
+  padding-left: 2rem;
+  margin-left: .6rem;
+}
+
+main > section.has-timeline > div::before {
+  content:'';
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: white;
+  margin-left: -.7rem;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5rem;
+  left: 0
+}
+
+main > section.has-timeline > div {
+  border-left: .2rem solid white;
+  padding-top: 1rem;
+}
+
+main > section.has-timeline > div:last-of-type {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
+main > section.has-timeline > div:last-of-type::before {
+  top: 1.5rem;
+}
+
+main > div:last-child {
+  text-align: left;
+  color: #444;
+  padding: 2rem;
+}
+
+#footer > a, #footer > a:focus, #footer > a:active, #footer > a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+  aside {
+    height: 100vh;
+    position: fixed;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    min-height: 70vh;
+    width: 60%;
+    max-width: 1200px;
+    margin-left: 40%;
+  }
+
+  main > section, aside > div {
+    padding: 3rem;
+  }
+
+  aside > div > h1 {
+    font-size: 3rem;
+  }
+
+  main > section {
+    margin: 1rem;
+  }
+
+  #footer {
+    text-align: right;
+    padding: 1rem 1.1rem .5rem 3rem;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

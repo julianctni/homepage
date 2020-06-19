@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Julian Catoni</title>
+    <meta name="description" content="Julian Catoni is a studied media computer scientist, based in Dresden, Germany.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <div>
+          <img src="julian.webp" id="clickImage">
+          <h1>Hello world, I'm Julian.</h1>
+          <p>A studied media computer scientist, based in Dresden, Germany.</p>
+          <div id="link-list" class="no-preload-transition">
+            <a target="_blank" href="https://github.com/julianctni">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://play.google.com/store/apps/developer?id=Julian+Catoni">
+              <i class="fab fa-google-play fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/julian-catoni-54793214b/">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://www.xing.com/profile/Julian_Catoni/cv">
+              <i class="fab fa-xing fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <section class="has-timeline">
+          <h2>Education</h2>
+          <div v-for="item in education">
+            <p>{{ item.period }}</p>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.location }}</p>
+          </div>
+        </section>
+
+        <section class="has-timeline">
+          <h2>Work experience</h2>
+          <div v-for="item in workExperience">
+            <p>{{ item.period }}</p>
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.task }}</p>
+            <p>{{ item.location }}</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          <div v-for="item in projects">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </div>
+        </section>
+        <div id="footer">
+          <a href="imprint.html">imprint</a>
+          <p>&copy; 2020 Julian Catoni</p>
+        </div>
+      </main>
+    </div>
+
+    <script>
+
+      const removeNoPreloadTransitionClasses = () => {
+        const npt = 'no-preload-transition';
+        const elements = document.getElementsByClassName(npt);
+        Array.from(elements).forEach(e => e.classList.remove(npt));
+      };
+
+      const fetchContent = async () => {
+        let response = await fetch('data.json');
+        let result = await response.json();
+        return result;
+      };
+
+      const app = new Vue({
+        el: '#app',
+        data: {
+          education: null,
+          workExperience: null,
+          projects: null
+        },
+        created() {
+          fetchContent().then(result => {
+            this.education = result.education;
+            this.workExperience = result.work_experience;
+            this.projects = result.projects;
+          });
+        }
+      });
+      window.onload = () => removeNoPreloadTransitionClasses();
+      
+    </script>
+  </body>
+</html>
