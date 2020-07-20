@@ -1,6 +1,16 @@
 {
+  "scripts": {
+    "dev": "parcel index.html imprint.html",
+    "build": "parcel build index.html imprint.html"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "vue": "^2.6.11"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
