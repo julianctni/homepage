@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import data from './../data.json';
+import data from './../data/data.json';
 import '@fortawesome/fontawesome-free'
 import './../css/style.css';
 
