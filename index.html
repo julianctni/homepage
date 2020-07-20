@@ -6,11 +6,9 @@
     <meta name="description" content="Julian Catoni is a studied media computer scientist, based in Dresden, Germany.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/fontawesome.min.css">
-    <link rel="stylesheet" href="css/brands.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/brands.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   </head>
   <body>
     <div id="app">
@@ -69,38 +67,7 @@
         </div>
       </main>
     </div>
-
-    <script>
-
-      const removeNoPreloadTransitionClasses = () => {
-        const npt = 'no-preload-transition';
-        const elements = document.getElementsByClassName(npt);
-        Array.from(elements).forEach(e => e.classList.remove(npt));
-      };
-
-      const fetchContent = async () => {
-        let response = await fetch('data.json');
-        let result = await response.json();
-        return result;
-      };
-
-      const app = new Vue({
-        el: '#app',
-        data: {
-          education: null,
-          workExperience: null,
-          projects: null
-        },
-        created() {
-          fetchContent().then(result => {
-            this.education = result.education;
-            this.workExperience = result.work_experience;
-            this.projects = result.projects;
-          });
-        }
-      });
-      window.onload = () => removeNoPreloadTransitionClasses();
-      
-    </script>
+    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
