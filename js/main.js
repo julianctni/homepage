@@ -1,5 +1,7 @@
 import Vue from 'vue';
-import data from './../data.json'
+import data from './../data.json';
+import '@fortawesome/fontawesome-free'
+import './../css/style.css';
 
 const removeNoPreloadTransitionClasses = () => {
   const npt = "no-preload-transition";
