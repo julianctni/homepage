@@ -1,6 +1,10 @@
 import Vue from 'vue';
-import data from './../data/data.json';
-import '@fortawesome/fontawesome-free'
+import education from './../data/education.json';
+import projects from './../data/projects.json';
+import workExperience from './../data/work_experience.json';
+import '@fortawesome/fontawesome-free/css/brands.min.css';
+import '@fortawesome/fontawesome-free/css/solid.min.css';
+import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
 import './../css/style.css';
 
 const removeNoPreloadTransitionClasses = () => {
@@ -17,9 +21,9 @@ const app = new Vue({
     projects: null,
   },
   created() {
-      this.education = data.education;
-      this.workExperience = data.work_experience;
-      this.projects = data.projects;
+      this.education = education;
+      this.workExperience = workExperience;
+      this.projects = projects;
   },
 });
 window.onload = () => removeNoPreloadTransitionClasses();

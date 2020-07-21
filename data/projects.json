@@ -1,0 +1,35 @@
+[
+  {
+    "title": "mensaDD",
+    "description": "mensaDD is an Android app for retrieving the menus of the student canteens in and around Dresden. The main reason for the development was my personal dissatisfaction with the already offered mensa apps. Besides displaying the menu plans, mensaDD also supports the visualisation of all canteens on a map as well as checking the current credit balance of the canteen card. In addition to the app itself, the project includes a server-side crawler that regularly retrieves the offers from the Studentenwerk's website.",
+    "url": "https://github.com/julianctni/mensaDD",
+    "tags": ["Android", "App", "Java", "Mapbox", "Python"]
+  },
+  {
+    "title": "OUTPUT.DD",
+    "description": "content will be added soon.",
+    "url": "https://play.google.com/store/apps/details?id=de.tud.android.outputdd", 
+    "tags": ["Android", "App", "Java", "Gamification", "Research project"]
+  },
+  {
+    "title": "Dresden Vegan",
+    "description": "content will be added soon.",
+    "url": "https://github.com/julianctni/ddvegan",
+    "tags": ["Android", "App", "Java", "PHP"]
+  },
+  {
+    "title": "fastVPN",
+    "description": "content will be added soon.",
+    "tags": ["Web", "Dashboard", "Graphs", "JavaScript", "Materialize CSS", "Cytoscape.js", "node.js", "Websockets"]
+  },
+  {
+    "title": "Verbogene Relationen",
+    "description": "content will be added soon.",
+    "url": ""
+  },
+  {
+    "title": "Website 50th anniversary of computer science education",
+    "description": "content will be added soon.",
+    "url": "https://festtage.inf.tu-dresden.de"
+  }
+]
