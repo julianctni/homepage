@@ -128,6 +128,10 @@ main > section > div > p {
   font-weight: 300;
 }
 
+main > section > div > p:last-child {
+  font-size: .8rem;
+}
+
 main > section > div > div:last-child {
   margin-top: .4rem;
   padding-left: .1rem;
