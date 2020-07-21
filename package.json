@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "parcel index.html imprint.html",
+    "dev": "parcel index.html imprint.html --no-hmr",
     "build": "parcel build index.html imprint.html",
     "deploy": "parcel build index.html imprint.html --out-dir /home/jvlian/html/catoni.dev"
   },
