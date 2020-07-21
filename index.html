@@ -17,7 +17,7 @@
     <div id="app">
       <aside>
         <div>
-          <img src="./img/julian.webp" id="clickImage" />
+          <img src="./img/julian.webp" alt="Portrait photo of Julian Catoni"/>
           <h1>Hello world, I'm Julian.</h1>
           <p>A studied media computer scientist, based in Dresden, Germany.</p>
           <div id="link-list" class="no-preload-transition">
@@ -25,6 +25,7 @@
               <img
                 class="icon"
                 src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/github.svg"
+                alt="GitHub icon"
               />
             </a>
             <a
@@ -34,6 +35,7 @@
               <img
                 class="icon"
                 src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/google-play.svg"
+                alt="Google Play icon"
               />
             </a>
             <a
@@ -43,6 +45,7 @@
               <img
                 class="icon"
                 src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/linkedin.svg"
+                alt="LinkedIn icon"
               />
             </a>
             <a
@@ -52,6 +55,7 @@
               <img
                 class="icon"
                 src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/xing.svg"
+                alt="XING icon"
               />
             </a>
           </div>
@@ -86,7 +90,7 @@
                 v-if="item.url"
                 v-bind:href="item.url"
                 target="_blank"
-                ><img class="icon" src="./img/external-link-alt.svg" />
+                ><img class="icon" src="./img/external-link-alt.svg" alt="Project link" />
               </a>
             </h3>
             <p>{{ item.description }}</p>
