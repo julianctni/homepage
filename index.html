@@ -8,7 +8,10 @@
       content="Julian Catoni is a studied media computer scientist, based in Dresden, Germany."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="app">
@@ -19,25 +22,37 @@
           <p>A studied media computer scientist, based in Dresden, Germany.</p>
           <div id="link-list" class="no-preload-transition">
             <a target="_blank" href="https://github.com/julianctni">
-              <i class="fab fa-github fa-2x"></i>
+              <img
+                class="icon"
+                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/github.svg"
+              />
             </a>
             <a
               target="_blank"
               href="https://play.google.com/store/apps/developer?id=Julian+Catoni"
             >
-              <i class="fab fa-google-play fa-2x"></i>
+              <img
+                class="icon"
+                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/google-play.svg"
+              />
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/julian-catoni-54793214b/"
             >
-              <i class="fab fa-linkedin fa-2x"></i>
+              <img
+                class="icon"
+                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/linkedin.svg"
+              />
             </a>
             <a
               target="_blank"
               href="https://www.xing.com/profile/Julian_Catoni/cv"
             >
-              <i class="fab fa-xing fa-2x"></i>
+              <img
+                class="icon"
+                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/xing.svg"
+              />
             </a>
           </div>
         </div>
@@ -71,8 +86,8 @@
                 v-if="item.url"
                 v-bind:href="item.url"
                 target="_blank"
-                ><i class="fas fa-external-link-alt"></i
-              ></a>
+                ><img class="icon" src="./img/external-link-alt.svg" />
+              </a>
             </h3>
             <p>{{ item.description }}</p>
             <div>
