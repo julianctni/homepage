@@ -25,11 +25,12 @@
   {
     "title": "Verbogene Relationen",
     "description": "content will be added soon.",
-    "url": ""
+    "tags": ["Museum", "Tabletop", "Touch", "D3.js", "JavaScript", "node.js", "Websockets"]
   },
   {
     "title": "Website 50th anniversary of computer science education",
     "description": "content will be added soon.",
-    "url": "https://festtage.inf.tu-dresden.de"
+    "url": "https://festtage.inf.tu-dresden.de",
+    "tags": ["Website", "React", "JavaScript", "Mapbox", "Reactstrap"]
   }
 ]
