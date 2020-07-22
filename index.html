@@ -9,9 +9,23 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="./site.webmanifest" />
 
     <link
@@ -23,7 +37,11 @@
     <div id="app">
       <aside>
         <div>
-          <img src="./img/julian.webp" alt="Portrait photo of Julian Catoni" />
+          <picture>
+            <source srcset="./img/julian.webp" type="image/webp" />
+            <source srcset="./img/julian.jpg" type="image/jpeg" />
+            <img src="./img/julian.jpg" alt="Portrait photo of Julian Catoni" />
+          </picture>
           <h1>
             Hello world,<br />
             I'm Julian.

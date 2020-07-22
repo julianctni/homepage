@@ -46,7 +46,7 @@ aside > div > h1 {
   font-size: 2rem;
 }
 
-aside > div > img {
+aside > div > picture > img {
   width: 40%;
   height: 40%;
   border-radius: 50%;
@@ -54,7 +54,7 @@ aside > div > img {
   animation-delay: 500ms;
 }
 
-aside > div > img:hover {
+aside > div > picture > img:hover {
   animation: shake 500ms;
   animation-iteration-count: infinite;
 }
