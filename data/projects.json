@@ -15,7 +15,7 @@
     "title": "Dresden Vegan",
     "description": "Dresden Vegan is an Android app where users can quickly find out where they can eat or shop vegan in Dresden. The app includes restaurants, cafés, bakeries, grocery stores and events. These can be displayed in lists or on a map. Dresden Vegan was the first Android app I developed. This was done in cooperation with a friend from university. Unfortunately the app is currently not being developed further due to time constraints.",
     "url": "https://github.com/julianctni/ddvegan",
-    "tags": ["Android", "App", "Java", "PHP"]
+    "tags": ["Android", "App", "Java"]
   },
   {
     "title": "fastVPN",
