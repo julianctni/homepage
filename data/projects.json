@@ -25,7 +25,7 @@
   },
   {
     "title": "Verbogene Relationen",
-    "description": "\"Verborgene Relationen\" is a museum application that I developed together with a fellow student during my master's degree. The application was developed for the special exhibition of SKD Dresden on Veronese's Cuccina cycle and consists of two parts. An interactive graph is displayed on a multi-touch tabletop display, which breaks down the information shown in the painting. In the second part of the application, the corresponding area in the painting is highlighted by a beamer or on a large screen.",
+    "description": "\"Verborgene Relationen\" is a museum application that I developed together with a fellow student during my master's degree. The application was developed for the special exhibition of SKD Dresden on Veronese's Cuccina cycle and consists of two parts. An interactive graph, which breaks down the information shown in the painting, is displayed on a multi-touch tabletop display. In the second part of the application, the corresponding parts of the painting are highlighted on a large screen or beamer image. The communication between the two parts was realized with websockets.",
     "tags": ["Museum", "Tabletop", "Touch", "D3.js", "JavaScript", "node.js", "Websockets", "Study project"]
   },
   {
