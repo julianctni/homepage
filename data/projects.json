@@ -9,7 +9,7 @@
     "title": "OUTPUT.DD",
     "description": "OUTPUT.DD is an annual one-day fair of the faculty of computer science at the TU Dresden. The app includes the program, a map view of the event area, an integrated Twitter feed and a gamification component. As part of my master thesis I redesigned the complete UI as well as parts of the game concept. I have continued this work during my work as a research assistant.",
     "url": "https://play.google.com/store/apps/details?id=de.tud.android.outputdd", 
-    "tags": ["Android", "App", "Java", "Realm", "Gamification", "Research project"]
+    "tags": ["Android", "App", "Java", "Realm", "Gamification", "Research project", "Study project"]
   },
   {
     "title": "Dresden Vegan",
@@ -19,18 +19,19 @@
   },
   {
     "title": "fastVPN",
-    "description": "content will be added soon.",
-    "tags": ["Web", "Dashboard", "Graphs", "JavaScript", "Materialize CSS", "Cytoscape.js", "node.js", "Websockets"]
+    "description": "As part of the research project \"fastVPN - Network Infrastructure for Industry 4.0\", I developed a web application for the administration of networks together with two fellow students during my master's degree. Besides the client application with dashboard, editable network graph and logging system we also developed the server component. The communication took place via HTTP requests and websockets.",
+    "url": "https://imld.de/research/research-projects/fastvpn/",
+    "tags": ["Web", "Dashboard", "Graphs", "JavaScript", "Materialize CSS", "Cytoscape.js", "node.js", "Websockets", "Study project"]
   },
   {
     "title": "Verbogene Relationen",
-    "description": "content will be added soon.",
-    "tags": ["Museum", "Tabletop", "Touch", "D3.js", "JavaScript", "node.js", "Websockets"]
+    "description": "\"Verborgene Relationen\" is a museum application that I developed together with a fellow student during my master's degree. The application was developed for the special exhibition of SKD Dresden on Veronese's Cuccina cycle and consists of two parts. An interactive graph is displayed on a multi-touch tabletop display, which breaks down the information shown in the painting. In the second part of the application, the corresponding area in the painting is highlighted by a beamer or on a large screen.",
+    "tags": ["Museum", "Tabletop", "Touch", "D3.js", "JavaScript", "node.js", "Websockets", "Study project"]
   },
   {
     "title": "Website 50th anniversary of computer science education",
-    "description": "content will be added soon.",
+    "description": "For the 50th anniversary of computer science education at the TU Dresden (and other universities) I developed a website during my employment as a research assistant. It contains all information about the program as well as a map view which shows the different locations where events take place. During development, special emphasis was placed on responsiveness.",
     "url": "https://festtage.inf.tu-dresden.de",
-    "tags": ["Website", "React", "JavaScript", "Mapbox", "Reactstrap"]
+    "tags": ["Website", "React.js", "JavaScript", "Mapbox", "Reactstrap"]
   }
 ]
