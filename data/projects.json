@@ -18,8 +18,8 @@
     "tags": ["Android", "App", "Java"]
   },
   {
-    "title": "fastVPN",
-    "description": "As part of the research project \"fastVPN - Network Infrastructure for Industry 4.0\", I developed a web application for the administration of networks together with two fellow students during my master's degree. Besides the client application with dashboard, editable network graph and logging system we also developed the server component. The communication took place via HTTP requests and websockets.",
+    "title": "fastvpn",
+    "description": "As part of the research project \"fastvpn - Network Infrastructure for Industry 4.0\", I developed a web application for the administration of networks together with two fellow students during my master's degree. Besides the client application with dashboard, editable network graph and logging system we also developed the server component. The communication took place via HTTP requests and websockets.",
     "url": "https://imld.de/research/research-projects/fastvpn/",
     "tags": ["Web", "Dashboard", "Graphs", "JavaScript", "Materialize CSS", "Cytoscape.js", "node.js", "Websockets", "Study project"]
   },
