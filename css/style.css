@@ -68,6 +68,10 @@ aside #link-list .icon {
   transition: ease-in-out 100ms;
 }
 
+aside #link-list {
+  margin-top: 2rem;
+}
+
 @media (pointer: fine) {
   aside #link-list .icon:hover {
     transform: scale(1.5);
@@ -123,7 +127,7 @@ main > section > div > h3 > a .icon {
 }
 
 main > section > div > h3 > a .icon:hover {
-  opacity: 0.8;
+  opacity: 1.0;
 }
 
 main > section > div > p {
@@ -234,6 +238,7 @@ main > div:last-child {
 
   aside > div > h1 {
     font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   main > section {
