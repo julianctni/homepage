@@ -8,6 +8,12 @@
       content="Julian Catoni is a studied media computer scientist, based in Dresden, Germany."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
@@ -17,8 +23,11 @@
     <div id="app">
       <aside>
         <div>
-          <img src="./img/julian.webp" alt="Portrait photo of Julian Catoni"/>
-          <h1>Hello world,<br> I'm Julian.</h1>
+          <img src="./img/julian.webp" alt="Portrait photo of Julian Catoni" />
+          <h1>
+            Hello world,<br />
+            I'm Julian.
+          </h1>
           <p>A studied media computer scientist, based in Dresden, Germany.</p>
           <div id="link-list" class="no-preload-transition">
             <a target="_blank" href="https://github.com/julianctni">
@@ -90,7 +99,11 @@
                 v-if="item.url"
                 v-bind:href="item.url"
                 target="_blank"
-                ><img class="icon" src="./img/external-link-alt.svg" alt="Project link" />
+                ><img
+                  class="icon"
+                  src="./img/external-link-alt.svg"
+                  alt="Project link"
+                />
               </a>
             </h3>
             <p>{{ item.description }}</p>
