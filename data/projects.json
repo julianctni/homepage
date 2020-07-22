@@ -7,13 +7,13 @@
   },
   {
     "title": "OUTPUT.DD",
-    "description": "content will be added soon.",
+    "description": "OUTPUT.DD is an annual one-day fair of the faculty of computer science at the TU Dresden. The app includes the program, a map view of the event area, an integrated Twitter feed and a gamification component. As part of my master thesis I redesigned the complete UI as well as parts of the game concept. I have continued this work during my work as a research assistant.",
     "url": "https://play.google.com/store/apps/details?id=de.tud.android.outputdd", 
     "tags": ["Android", "App", "Java", "Realm", "Gamification", "Research project"]
   },
   {
     "title": "Dresden Vegan",
-    "description": "content will be added soon.",
+    "description": "Dresden Vegan is an Android app where users can quickly find out where they can eat or shop vegan in Dresden. The app includes restaurants, cafés, bakeries, grocery stores and events. These can be displayed in lists or on a map. Dresden Vegan was the first Android app I developed. This was done in cooperation with a friend from university. Unfortunately the app is currently not being developed further due to time constraints.",
     "url": "https://github.com/julianctni/ddvegan",
     "tags": ["Android", "App", "Java", "PHP"]
   },
