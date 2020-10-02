@@ -3,7 +3,7 @@ export default [
     period: "10/2020 – today",
     title: "Software developer frontend/apps",
     task:
-      "Developing ELCO's AppDesigner with Vue.js and Flutter",
+      "Developing ELCO's AppDesigner",
     location: "ELCO Industrial Automation, Dresden, Germany",
   },
   {
