@@ -47,7 +47,7 @@ export default [
     ],
   },
   {
-    title: "Verbogene Relationen",
+    title: "Verborgene Relationen",
     description:
       "\"Verborgene Relationen\" is a museum application that I developed together with a fellow student during my master's degree. The application was developed for the special exhibition of SKD Dresden on Veronese's Cuccina cycle and consists of two parts. An interactive graph, which breaks down the information shown in the painting, is displayed on a multi-touch tabletop display. In the second part of the application, the corresponding parts of the painting are highlighted on a large screen or beamer image.",
     tags: [
