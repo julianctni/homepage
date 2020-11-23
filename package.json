@@ -5,8 +5,8 @@
     "deploy": "parcel build index.html imprint.html --out-dir /home/jvlian/html/catoni.dev"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
-    "vue": "^2.6.11"
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "vue": "^2.6.12"
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
