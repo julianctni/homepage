@@ -1,144 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>catoni.dev</title>
-    <meta
-      name="description"
-      content="Julian Catoni is a studied media computer scientist, based in Dresden, Germany."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./img/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./img/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./img/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="./site.webmanifest" />
+<head>
+  <meta charset="utf-8" />
+  <title>catoni.dev</title>
+  <meta name="description" content="Julian Catoni is a studied media computer scientist, based in Dresden, Germany." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800;900&family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="app">
-      <aside>
-        <div>
-          <picture>
-            <source srcset="./img/julian.webp" type="image/webp" />
-            <source srcset="./img/julian.jpg" type="image/jpeg" />
-            <img
-              src="./img/julian.webp"
-              alt="Portrait photo of Julian Catoni"
-            />
-          </picture>
-          <h1>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="./site.webmanifest" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800;900&family=Roboto:wght@300&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="app">
+    <aside>
+      <div>
+        <picture>
+          <source srcset="./img/julian.webp" type="image/webp" />
+          <source srcset="./img/julian.jpg" type="image/jpeg" />
+          <img src="./img/julian.webp" alt="Portrait photo of Julian Catoni" />
+        </picture>
+        <h1>
+          <span :class="h1Background">
             Hello world, I'm Julian.
-          </h1>
-          <p>A studied media computer scientist, based in Dresden, Germany.</p>
-          <div id="link-list" class="no-preload-transition">
-            <a target="_blank" href="https://github.com/julianctni">
-              <img
-                class="icon"
-                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/github.svg"
-                alt="GitHub icon"
-              />
+          </span>
+        </h1>
+        <p>A studied media computer scientist, based in Dresden, Germany.</p>
+        <div id="link-list" class="no-preload-transition">
+          <a target="_blank" href="https://github.com/julianctni">
+            <img class="icon" src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/github.svg"
+              alt="GitHub icon" />
+          </a>
+          <a target="_blank" href="https://play.google.com/store/apps/developer?id=Julian+Catoni">
+            <img class="icon" src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/google-play.svg"
+              alt="Google Play icon" />
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/julian-catoni-54793214b/">
+            <img class="icon" src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/linkedin.svg"
+              alt="LinkedIn icon" />
+          </a>
+          <a target="_blank" href="https://www.xing.com/profile/Julian_Catoni/cv">
+            <img class="icon" src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/xing.svg" alt="XING icon" />
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="has-timeline">
+        <h2>Education</h2>
+        <div v-for="item in education">
+          <p>{{ item.period }}</p>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.location }}</p>
+        </div>
+      </section>
+
+      <section class="has-timeline">
+        <h2>Work Experience</h2>
+        <div v-for="item in workExperience">
+          <p>{{ item.period }}</p>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.task }}</p>
+          <p>{{ item.location }}</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <div v-for="item in projects">
+          <h3>
+            {{ item.title }}<a v-if="item.url" v-bind:href="item.url" target="_blank"><img class="icon"
+                src="./img/external-link-alt.svg" alt="Project link" />
             </a>
-            <a
-              target="_blank"
-              href="https://play.google.com/store/apps/developer?id=Julian+Catoni"
-            >
-              <img
-                class="icon"
-                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/google-play.svg"
-                alt="Google Play icon"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/julian-catoni-54793214b/"
-            >
-              <img
-                class="icon"
-                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/linkedin.svg"
-                alt="LinkedIn icon"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.xing.com/profile/Julian_Catoni/cv"
-            >
-              <img
-                class="icon"
-                src="./node_modules/@fortawesome/fontawesome-free/svgs/brands/xing.svg"
-                alt="XING icon"
-              />
-            </a>
+          </h3>
+          <p>{{ item.description }}</p>
+          <div>
+            <span class="project-tag" v-for="tag in item.tags">{{ tag }}</span>
           </div>
         </div>
-      </aside>
+      </section>
+      <div id="footer">
+        <p>&copy; 2022 Julian Catoni</p>
+      </div>
+    </main>
+  </div>
+  <script src="./js/app.js"></script>
+</body>
 
-      <main>
-        <section class="has-timeline">
-          <h2>Education</h2>
-          <div v-for="item in education">
-            <p>{{ item.period }}</p>
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.location }}</p>
-          </div>
-        </section>
-
-        <section class="has-timeline">
-          <h2>Work Experience</h2>
-          <div v-for="item in workExperience">
-            <p>{{ item.period }}</p>
-            <h3>{{ item.title }}</h3>
-            <p>{{ item.task }}</p>
-            <p>{{ item.location }}</p>
-          </div>
-        </section>
-
-        <section>
-          <h2>Projects</h2>
-          <div v-for="item in projects">
-            <h3>
-              {{ item.title }}<a
-                v-if="item.url"
-                v-bind:href="item.url"
-                target="_blank"
-                ><img
-                  class="icon"
-                  src="./img/external-link-alt.svg"
-                  alt="Project link"
-                />
-              </a>
-            </h3>
-            <p>{{ item.description }}</p>
-            <div>
-              <span class="project-tag" v-for="tag in item.tags"
-                >{{ tag }}</span
-              >
-            </div>
-          </div>
-        </section>
-        <div id="footer">
-          <p>&copy; 2022 Julian Catoni</p>
-        </div>
-      </main>
-    </div>
-    <script src="./js/app.js"></script>
-  </body>
 </html>

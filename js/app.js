@@ -16,11 +16,28 @@ const app = new Vue({
     education: null,
     workExperience: null,
     projects: null,
+    h1Background: "blue"
   },
   created() {
-      this.education = education;
-      this.workExperience = workExperience;
-      this.projects = projects;
+    this.education = education;
+    this.workExperience = workExperience;
+    this.projects = projects;
   },
+  methods: {
+    setH1Background: (color) => this.h1Background = color
+  }
 });
 window.onload = () => removeNoPreloadTransitionClasses();
+window.onscroll = () => {
+  const scrollHeight = document.body.scrollHeight - window.innerHeight;
+  const currentScrollPosition = window.scrollY;
+  const scrollProgress = currentScrollPosition / scrollHeight;
+  console.log(scrollProgress);
+  if (scrollProgress < 1/3) {
+    app.$data.h1Background = "blue";
+  } else if (scrollProgress >= 1/3 && scrollProgress < 2/3) {
+    app.$data.h1Background = "violet";
+  } else {
+    app.$data.h1Background = "red";
+  }
+};
