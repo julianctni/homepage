@@ -220,7 +220,6 @@ main>div:last-child {
   }
 
   h1 span {
-    padding: 0 .5rem 0 6rem;
     box-decoration-break: clone;
     line-height: 130%;
   }
