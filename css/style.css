@@ -91,7 +91,7 @@ main>section {
 }
 
 main>section:nth-child(3n + 1) {
-  background-color: #41628b;
+  background-color: #3b587d;
 }
 
 main>section:nth-of-type(3n + 2) {
@@ -219,21 +219,22 @@ main>div:last-child {
     justify-content: center;
   }
 
-  h1 span{
-    padding: 0 1rem 0 4rem;
-    line-height: 110%;
+  h1 span {
+    padding: 0 .5rem 0 6rem;
+    box-decoration-break: clone;
+    line-height: 130%;
   }
-  
-  h1 span.blue{
-    background: linear-gradient(to top, #41628b 45%, transparent 45%);
+
+  h1 span.blue {
+    background: linear-gradient(to top, #3b587d 35%, transparent 35%);
   }
-  
-  h1 span.violet{
-    background: linear-gradient(to top, #6d597a 45%, transparent 45%);
+
+  h1 span.violet {
+    background: linear-gradient(to top, #6d597a 35%, transparent 35%);
   }
-  
-  h1 span.red{
-    background: linear-gradient(to top, #ab6a78 45%, transparent 45%);
+
+  h1 span.red {
+    background: linear-gradient(to top, #ab6a78 35%, transparent 35%);
   }
 
   main {
