@@ -1,9 +1,16 @@
 export default [
   {
-    period: "10/2020 – today",
+    period: "09/2022 – today",
+    title: "Software Developer",
+    task:
+      "Developing the business integration platform TRANSCONNECT®",
+    location: "SQL Projekt AG, Dresden, Germany",
+  },
+  {
+    period: "10/2020 – 08/2022",
     title: "Software Developer Frontend/Apps",
     task:
-      "Developing ELCO's AppDesigner",
+      "Developing the low code app editor AppDesigner",
     location: "ELCO Industrial Automation, Dresden, Germany",
   },
   {
