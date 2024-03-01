@@ -3,7 +3,7 @@ export default [
     period: "09/2022 – today",
     title: "Software Developer",
     task:
-      "Developing the business integration platform TRANSCONNECT®",
+      "Developing the new web frontend for the business integration platform TRANSCONNECT®",
     location: "SQL Projekt AG, Dresden, Germany",
   },
   {
