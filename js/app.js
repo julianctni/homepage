@@ -24,7 +24,11 @@ const app = new Vue({
     this.projects = projects;
   },
   methods: {
-    setH1Background: (color) => this.h1Background = color
+    setH1Background: (color) => this.h1Background = color,
+    getCurrentYear: () => {
+      const date = new Date();
+      return date.getFullYear();
+    }
   }
 });
 window.onload = () => removeNoPreloadTransitionClasses();
